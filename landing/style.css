@@ -1,0 +1,702 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Open+Sans:wght@300;400&family=Roboto:ital,wght@1,300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --clr1: #000;
+  --clr2: #fff;
+  --clr3: rgb(32, 30, 188);
+}
+
+body {
+  background: #000;
+  color: white;
+  border: 16px solid rebeccapurple;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(i1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  padding: 20px 112px;
+}
+
+nav {
+  position: fixed;
+  left: 0px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  border: 8px solid rgb(25, 244, 98);
+  padding: 14px;
+  background: white;
+  margin-top: -37px;
+  margin-left: 14px;
+  width: 1486px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav h1 {
+  width: 157px;
+    margin-left: 44px;
+    font-size: 35px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff0000, #ffff00, #ff00f3, #0033ff, #ff00c4, #ff0000);
+    background-size: 400%;
+    font-weight: bolder;
+    text-decoration-line: underline;
+    text-decoration-color: rgb(21, 21, 20);
+    text-underline-offset: 6px;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+   0% {
+      background-position: 0;
+   }
+
+   100% {
+      background-position: 400%;
+   }
+}
+
+
+nav ul {
+  margin-left: 383px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: -26px;
+  margin-top: 10px;
+  margin-right: 41px;
+  border: 3px solid #ff0000;
+  padding: 10px;
+  background: rgb(8, 8, 8);
+}
+
+nav ul li a {
+  color: var(--clr2);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff00c4;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.header-text {
+  margin-top: 201px;
+  margin-left: 291px;
+  font-size: 30px;
+}
+
+.header-text h2 {
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+.header-text p {
+  font-size: 45px;
+  font-weight: bold;
+  margin-top: 23px;
+}
+
+.header-text p span {
+  color: #ff004f;
+}
+
+.startbtn {
+  margin-top: 2rem;
+  padding: 9px;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  color: var(--clr2);
+  background-color: #0033ff;
+    border: 5px solid #fff;
+  border-radius: .5rem;
+  transition: all 0.3s ease 0s;
+  cursor: pointer
+}
+
+.startbtn:hover {
+  background: #de3486;
+  transform: translateY(-1rem);
+}
+
+/* -------------------------------------------------about------------------------------------------------- */
+
+#about {
+  padding: 139px 0;
+  color: #e9dde0;
+  height: 100vh;
+  background: rgba(9, 9, 9, 0.62);
+  border: 10px solid #45ec42;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-col-1 {
+  flex-basis: 35%;
+}
+
+.about-col-1 img {
+  width: 100%;
+  border-radius: 15px;
+  filter: grayscale(.4);
+  transition: .3s ease;
+}
+
+.about-col-1 img:hover {
+  filter: grayscale(0);
+  transform: scale(0.6) rotate(1deg);
+}
+
+.about-col-2 {
+  flex-basis: 60%;
+
+}
+
+.about-col-2 h2 {
+  margin-top: -118px;
+  font-size: 60px;
+  padding: 47px;
+  font-weight: 600;
+  color: var(--clr2);
+  text-decoration-line: underline;
+  text-decoration-color: rgb(241, 240, 236);
+  text-underline-offset: 21px;
+}
+
+.about-col-2 p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.tab-titles {
+  display: flex;
+  margin: 30px 0 40px;
+}
+
+.tab-links {
+  margin-right: 50px;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-titles p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.tab-links::after {
+  content: '';
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+  width: 100%;
+
+}
+
+.tab-contents {
+  display: none;
+}
+
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.tab-contents ul li span {
+  color: #ec59ca;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.tab-contents ul li br {
+  color: #f9f6f8;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.tab-contents.active-tab {
+  display: block;
+}
+
+/* ------------------------------------services------------------------------------------- */
+
+#services {
+  padding: 80px 0;
+  border: 10px solid rgb(32, 30, 188);
+}
+
+#services h3 {
+  margin-left: 448px;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 5px;
+  text-decoration-line: underline;
+  text-decoration-color: rgb(241, 240, 236);
+  text-underline-offset: 17px;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 74px;
+}
+
+.services-list div {
+  background: var(--clr3);
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div i {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.services-list h2 {
+  font-size: 35px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.services-list div:hover {
+  background: #ff004f;
+  transform: translateY(-10px);
+}
+
+.btn {
+  margin-top: 2rem;
+  margin-left: 72px;
+  padding: 12px;
+  font-size: 20px;
+  border-radius: 9px;
+  font-weight: bold;
+  border: 3px solid;
+  color: rgb(26 26 29);
+  background: rgb(32, 204, 81);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn:hover {
+  background: var(--clr3);
+  box-shadow: 0px .2rem 2rem rgba(172, 104, 108, 0.4);
+  color: #f7e8e8;
+  transform: translateY(-1rem);
+}
+
+/*------------------------------------------------ skills----------------------------------------------------- */
+
+#My-Skills {
+  border: 10px solid rgb(32, 204, 81);
+  padding: 80px;
+}
+
+#My-Skills h2 {
+  margin-left: 513px;
+  font-size: 50px;
+  margin-top: 23px;
+  font-weight: bold;
+  text-decoration-line: underline;
+  text-decoration-color: rgb(241, 240, 236);
+  text-underline-offset: 13px;
+}
+
+.skills-content {
+  display: grid;
+  margin-left: 76px;
+  margin-right: 70px;
+  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.left p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 54px;
+  text-decoration-line: underline;
+  text-decoration-color: rgb(81, 233, 96);
+  text-underline-offset: 6px;
+}
+
+.skills-content .left .bars {
+  margin-bottom: 15px;
+  margin-top: 23px;
+  width: 508px;
+}
+
+.skills-content .left .info,
+.right .info {
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skills-content .left span {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.skills-content .left .line,
+.right .line {
+  height: 5px;
+  width: 100%;
+  background: lightgrey;
+  position: relative;
+}
+
+.skills-content .left .line::before,
+.right .line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: crimson;
+}
+
+.skills-content .left .html::before {
+  width: 90%;
+}
+
+.skills-content .left .css::before {
+  width: 89%;
+}
+
+.skills-content .left .js::before {
+  width: 80%;
+}
+
+.skills-content .left .bootstrap::before {
+  width: 60%;
+}
+
+.skills-content .left .DSA::before {
+  width: 70%;
+}
+
+.skills-content .left .Java::before {
+  width: 75%;
+}
+
+.skills-content .left .C::before {
+  width: 70%;
+}
+
+.skills-content .right {
+  margin-left: 70px;
+  margin-top: 30px;
+}
+
+.right p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 21px;
+  text-decoration-line: underline;
+  text-decoration-color: rgb(93, 219, 93);
+  text-underline-offset: 6px;
+}
+
+.skills-content .right .bars {
+  margin-bottom: 15px;
+  margin-top: 23px;
+  width: 508px;
+  padding: 3px;
+}
+
+.skills-content .right span {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.skills-content .right .Communication::before {
+  width: 90%;
+}
+
+.skills-content .right .Problem::before {
+  width: 70%;
+}
+
+.skills-content .right .teamwork::before {
+  width: 80%;
+}
+
+.skills-content .right .Leadership::before {
+  width: 50%;
+}
+
+.skills-content .right .Decision::before {
+  width: 65%;
+}
+
+.skills-content .right .Adaptability::before {
+  width: 75%;
+}
+
+/* --------------------------------------portfolio----------------------------------- */
+
+#portfolio {
+  padding: 50px 0;
+  border: 10px solid red;
+  background-size: cover;
+}
+
+#portfolio h2 {
+  margin-left: 471px;
+  font-size: 50px;
+  margin-top: 24px;
+  font-weight: bold;
+  text-decoration-line: underline;
+  text-decoration-color: rgb(243, 242, 239);
+  text-underline-offset: 20px;
+}
+
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.Work {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.Work img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  height: 429px;
+  transition: transform 0.5s;
+}
+
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #ff004f);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+
+.layer h3 {
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 23px;
+  text-decoration-line: underline;
+  text-decoration-color: rgb(239, 238, 233);
+  text-underline-offset: 6px;
+}
+
+.layer p {
+  font-size: 23px;
+  font-weight: bold;
+
+}
+
+.layer a {
+  margin-top: 20px;
+  color: #ff004f;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.Work:hover img {
+  transform: scale(1.1);
+}
+
+.Work:hover .layer {
+  height: 100%;
+}
+
+.btn2 {
+  display: block;
+  margin-left: 511px;
+  margin-top: 34px;
+  width: fit-content;
+  font-size: 20px;
+  font-weight: bold;
+  background: var(--clr3);
+  border: 4px solid white;
+  padding: 14px 50px;
+  border-radius: 6px;
+  color: var(--clr2);
+  transition: all 0.3s ease 0s;
+  cursor: pointer
+}
+
+.btn2:hover {
+  background: #be54f3;
+  transform: translateY(-1rem);
+}
+
+
+/*------------------------------------------------------------ contact------------------------------ */
+
+.contact-left {
+  flex-basis: 35%;
+  margin-top: 47px;
+  margin-left: 62px;
+}
+
+.contact-left h1 {
+  width: 235px;
+  font-size: 46px;
+  font-weight: bold;
+  text-decoration-line: underline;
+  text-decoration-color: rgb(239, 238, 233);
+  text-underline-offset: 10px;
+}
+
+.contact-left p {
+  margin-top: 44px;
+}
+
+.contact-left p i {
+  color: #b447b4;
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.social-icons {
+  margin-top: 50px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #faeafa;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+  color: #ff004f;
+  transform: translateY(-5px);
+}
+
+.contact-right {
+  flex-basis: 60%;
+  margin-top: 105px;
+}
+
+.contact-right form {
+  width: 100%;
+
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: white;
+  padding: 15px;
+  margin: 15px;
+  color: var(--clr2);
+  border-radius: 6px;
+}
+
+.btn3 {
+  display: block;
+  margin: 42px auto;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 1px;
+  border: 5px solid rgb(229 210 210);
+  background: rgb(106, 9, 180);
+  padding: 14px 50px;
+  border-radius: 6px;
+  color: var(--clr2);
+  transition: all 0.3s ease 0s;
+}
+
+
+.btn3:hover {
+  background: #be54f3;
+  transform: translateY(-1rem);
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0px;
+  background: var(--clr3);
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: -44px;
+}
+
+.copyright i {
+  color: red;
+}

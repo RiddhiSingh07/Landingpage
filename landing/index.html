@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/522926717b.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="header" id="home">
+        <div class="container">
+            <nav>
+                <h1>Portfolio</h1>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#My-Skills">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h2>Hello, My name is<br>
+                    Riddhi Singh<br></h2>
+                <p>And I'm a <span>Web Developer</span></p>
+                <button class="startbtn">Read More</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------about section ------------------------------------------>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="i.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">About me</h2>
+                    <p>My name is Riddhi Singh. Currently, I am pursuing Btech from C.V.Raman Global University,
+                        Bhubaneswar. I am a hardworking girl and a keen learner passionate about learning new skills
+                        ,improving my coding skills and creating visually appealing websites. I am interested in Web
+                        Development and designing. I built a lot of projects using HTML, CSS , Javascript, Tailwind CSS
+                        and Bootstrap and I want to enhance my skills and knowledge more in every field. I have basic
+                        knowledge of Java , C/C++ , DSA. I have consistently readied myself to seize whatever opportunities the environment presents. Apart from these I have Leadership qualities and I am a volunteer in National
+                        Service Scheme.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>Coursera Certificate</span><br>"HTML,CSS and Javascript for Web Developers"</li>
+                            <li><span>Oasis Infobyte</span><br>Internship in Web Development and Designing.</li>
+                            <li><span>7-Day Technical Bootcamp</span><br>Techedge 2023,Hosted By Prepleaf by Masai.</li>
+                            <li><span>CodersCave</span><br>Internship in Web Development.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents " id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web Development</li>
+                            <li><span>Front end Dev</span><br>Designing the Frontend part of websites</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Btech in CSE</span><br>C.V.Raman Global University<br>CGPA:- 8.6</li>
+                            <li><span>Intermediate</span><br>D.A.V Public School<br>Score:- 80.6%</li>
+                            <li><span>Matriculation</span><br>S.S.V.M Senior Secondary School<br>Score:- 83.2%</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------ services------------------------------------------->
+
+    <div id="services">
+        <div class="container">
+            <h3 class="sub-title">My services</h3>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa tempora mollitia, id quaerat
+                        itaque nostrum iste autem fugiat ea consequuntur recusandae rerum? Quo, fugit officiis.
+                        Laudantium voluptatibus natus sint numquam, magnam distinctio quas dolorum assumenda. Esse vel
+                        dolore, hic molestias saepe necessitatibus at natus debitis!</p>
+                    <button class="btn">Read More</button>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Frontend Dev</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa tempora mollitia, id quaerat
+                        itaque nostrum iste autem fugiat ea consequuntur recusandae rerum? Quo, fugit officiis.
+                        Laudantium voluptatibus natus sint numquam, magnam distinctio quas dolorum assumenda. Esse vel
+                        dolore, hic molestias saepe necessitatibus at natus debitis!</p>
+                    <button class="btn">Read More</button>
+                </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Machine learning</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa tempora mollitia, id quaerat
+                        itaque nostrum iste autem fugiat ea consequuntur recusandae rerum? Quo, fugit officiis.
+                        Laudantium voluptatibus natus sint numquam, magnam distinctio quas dolorum assumenda. Esse vel
+                        dolore, hic molestias saepe necessitatibus at natus debitis!</p>
+                    <button class="btn">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------------------------------- skils-------------------------------------------------- -->
+
+    <div id="My-Skills">
+        <h2 class="title">My skills</h2>
+        <div class="skills-content">
+            <div class="column left">
+                <p> Technical Skills</p>
+                <div class="bars">
+                    <div class="info">
+                        <span>HTML</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="line html"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>CSS</span>
+                        <span>91%</span>
+                    </div>
+                    <div class="line css"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>JavaScript</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="line js"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>Bootstrap</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="line bootstrap"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>DSA</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="line DSA"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>Java</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="line Java"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>C</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="line C"></div>
+                </div>
+            </div>
+
+            <div class="column right">
+                <p> Professional Skills</p>
+                <div class="bars">
+                    <div class="info">
+                        <span>Communication-Skills</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="line Communication"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>Problem Solving</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="line Problem"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>Team Work</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="line teamwork"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>Leadership Skills</span>
+                        <span>50%</span>
+                    </div>
+                    <div class="line Leadership"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>Decision making</span>
+                        <span>50%</span>
+                    </div>
+                    <div class="line Decision"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>Adaptability</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="line Adaptability"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!------------------------------- Portfolio---------------------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h2 class="sub-title">My Projects</h2>
+            <div class="work-list">
+                <div class="Work">
+                    <img src="i1.png">
+                    <div class="layer">
+                        <h3>TO-DO WEB APP</h3>
+                        <p>Built an to-do web app where user can add their task in the tasklist & mark thar task as
+                            completed or incomplete as well as user can also delete that task. </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="Work">
+                    <img src="i2.png">
+                    <div class="layer">
+                        <h3>Quote Generator</h3>
+                        <p>Built a random quote Generator that generate random quote on button click with the help of an
+                            external API and I used Quotable API to fetch the quote.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="Work">
+                    <img src="i3.png">
+                    <div class="layer">
+                        <h3>Ecommerce Website</h3>
+                        <p>Built an Ecommmerce website using HTML,CSS and JavaScript.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn2">See more</a>
+        </div>
+    </div>
+
+
+    <!------------------------------------------------------- contact--------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fas fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>345279134576</p>
+
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-pinterest"></i></a>
+                        <a href=""><i class="fab fa-google-plus"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="your name" required>
+                        <input type="email" name="email" placeholder="your email" required>
+                        <textarea name="Message" rows="6" placeholder="your Message"></textarea>
+                        <button type="submit" class="btn3">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © <i class="fas fa-heart"></i> All rights reserved</p>
+    </div>
+
+
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+
+</html>
